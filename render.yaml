@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pm-maintena-license-api
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: FIREBASE_SERVICE_ACCOUNT_KEY
+        sync: false
